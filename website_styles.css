@@ -321,34 +321,34 @@ nav a:hover {
 }
 
 
-@media (max-width: 740px) { /* Adjust the max-width to target your desired screen size */
+@media (max-width: 740px) { 
     .logo a {
-        font-size: 20px; /* Smaller font size for logo */
-        padding: 0; /* Reduced padding */
+        font-size: 20px; 
+        padding: 0; 
     }
 
     nav a {
-        font-size: 17px; /* Smaller font size for navbar links */
-        padding: 5px; /* Reduced padding */
+        font-size: 17px; 
+        padding: 5px; 
     }
 
 }
 
-@media (max-width: 650px) { /* Adjust the max-width to target your desired screen size */
+@media (max-width: 650px) { 
     .logo a {
-        font-size: 17px; /* Smaller font size for logo */
-        padding: 0; /* Reduced padding */
+        font-size: 17px; 
+        padding: 0; 
     }
 
     nav a {
-        font-size: 12px; /* Smaller font size for navbar links */
-        padding: 1px; /* Reduced padding */
+        font-size: 12px;
+        padding: 1px; 
     }
 }
 
-@media (max-width: 1300px) { /* Adjust the max-width to target your desired screen size */
+@media (max-width: 1300px) { 
     nav a {
-        padding: 10px; /* Reduced padding */
+        padding: 10px; 
     }
 
     .Experience {
@@ -357,8 +357,13 @@ nav a:hover {
     }
 }
 
+@media (max-width: 600px) { 
+    .Experience {
+        margin-top: 600px;
+    }
+}
 
-/* Caption Styling */
+
 figcaption {
     font-size: 14px;
     text-align: center;
