@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Tracker V1</title>
+    <link rel="stylesheet" href="projectstyles.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="content-container">
+            <h1>Calorie Tracker V1</h1>
+            <div style="font-family: Arial; font-size: 14px; Margin-bottom: 5px; text-align: center;"> Contributors: Cody Rawlings, Taiki Yamamoto, Khalad Whazzan</div>
+            <section class="project-media">
+                <img src="v1thumbnail.jpg" alt="Project Image">
+            </section>
+            
+            <section class="project-description">
+                <h2>Overview</h2>
+                <p>I love many forms of exercise. Weight-lifting, biking, walking, bouldering and skating are my favorites. I have always wondered how many calories I burn and my average heart-rate while doing these activites. This project was a part of the Hands-on PCB Engineering DeCal at Berkeley. The idea was to create a module with two seperate PCBs, the top housing power and display components and the bottom housing heart-rate sensing and computational components. This prototype implements MX-style keyswitches and a 3.7V lithium-polymer battery that has charging capabilites.</p>
+                
+                <h2>Bottom PCB</h2>
+                <section class="project-schematic">
+                    <img src="bottomschematicv1.png" alt="Project Image">
+                </section>
+                <p>The bottom PCB uses the MAX30102 sensor that has the ability to read heart-rate and blood oxygen concentration. I chose to use the ESP32-C3-Mini because of its small form factor and bluetooth capabilites.</p>
+            
+                <section class="project-media">
+                    <img src="bottomlayoutv1.png" alt="Project Image">
+                </section>
+                <h2>Top PCB</h2>
+                <section class="project-schematic">
+                    <img src="topschematicv1.png" alt="Project Image">
+                </section>
+                <p>The top PCB houses the EADOGS164 display and battery protection/charging ICs for functionality</p>
+                <section class="project-media">
+                    <img src="toplayoutv1.png" alt="Project Image">
+                </section>
+
+                <h2>Challenges and Solutions</h2>
+                <p>A few traces weren't connected on the top PCB, but I fixed that with a few jumper wires. The biggest problem with this version lied in how I wired the USB-C connector. I didn't wire VBUS and GND correctly on the bottom PCB, nor did I have a 3.3V to 5V boost to power the connector.</p>
+                <section class="project-media">
+                    <img src="v1error.png" alt="Project Image">
+                </section>
+                <p>I stayed up all night trying to individually solder the traces on the pcb to the correct pads on the USB-C connector and power with 5V externally via a power supply, but it didn't work and we weren't able to flash any code onto the ESP32.</p>
+
+                <section class="project-media">
+                    <img src="v1h1.jpg" alt="Project Image">
+                </section>
+                <section class="project-media">
+                    <img src="v1h2.jpg" alt="Project Image">
+                </section>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
