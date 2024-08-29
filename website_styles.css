@@ -357,7 +357,7 @@ nav a:hover {
     }
 }
 
-@media (max-width: 600px) { 
+@media screen and (max-width: 600px) { 
     .Experience {
         margin-top: 600px;
     }
